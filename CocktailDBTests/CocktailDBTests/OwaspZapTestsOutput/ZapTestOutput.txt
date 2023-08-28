@@ -1,0 +1,645 @@
+Found Java version 11.0.19
+Available memory: 16384 MB
+Using JVM args: -Xmx4096m
+891 [main] INFO  org.zaproxy.zap.GuiBootstrap - OWASP ZAP 2.13.0 started 28/08/2023, 07:57:34 with home /Users/watsonmatunhire/Library/Application Support/ZAP/
+1974 [AWT-EventQueue-0] INFO  org.zaproxy.zap.OsXGui - Initializing OS X specific settings, despite Apple's best efforts
+2794 [AWT-EventQueue-0] INFO  org.parosproxy.paros.view.View - Initialising View
+4224 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.control.ExtensionFactory - Installed add-ons: [[id=alertFilters, version=17.0.0], [id=ascanrules, version=56.0.0], [id=authhelper, version=0.9.0], [id=automation, version=0.30.0], [id=bruteforce, version=14.0.0], [id=callhome, version=0.7.0], [id=commonlib, version=1.15.0], [id=database, version=0.2.0], [id=diff, version=13.0.0], [id=directorylistv1, version=6.0.0], [id=domxss, version=16.0.0], [id=encoder, version=1.2.0], [id=exim, version=0.6.0], [id=formhandler, version=6.4.0], [id=fuzz, version=13.10.0], [id=gettingStarted, version=15.0.0], [id=graaljs, version=0.4.0], [id=graphql, version=0.18.0], [id=help, version=16.0.0], [id=hud, version=0.17.0], [id=invoke, version=13.0.0], [id=network, version=0.10.0], [id=oast, version=0.16.0], [id=onlineMenu, version=11.0.0], [id=openapi, version=35.0.0], [id=pscanrules, version=50.0.0], [id=quickstart, version=38.0.0], [id=replacer, version=13.0.0], [id=reports, version=0.23.0], [id=requester, version=7.3.0], [id=retest, version=0.6.0], [id=retire, version=0.24.0], [id=reveal, version=6.0.0], [id=scripts, version=39.0.0], [id=selenium, version=15.13.0], [id=soap, version=18.0.0], [id=spider, version=0.5.0], [id=spiderAjax, version=23.15.0], [id=tips, version=11.0.0], [id=webdrivermacos, version=57.0.0], [id=websocket, version=29.0.0], [id=zest, version=39.0.0]]
+4227 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.control.ExtensionFactory - Loading extensions
+4994 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.network.internal.TlsUtils - Using supported SSL/TLS protocols: [TLSv1.2, TLSv1.3]
+5386 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.control.ExtensionFactory - Extensions loaded
+6351 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Auto-update Extension - Allows ZAP to check for updates
+6461 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Options Extension - Options Extension
+6867 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Edit Menu Extension - Edit Menu Extension
+6879 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing API Extension - Provides a rest based API for controlling and accessing ZAP
+6916 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing History Extension - History Extension
+7101 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionReveal - Show hidden fields and enable disabled fields
+7117 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Search Extension - Search messages for strings and regular expressions
+7256 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Breakpoint Extension - Allows you to intercept and modify requests and responses
+7436 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Passive Scan Extension - Passive scanner
+7533 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Script Passive Scan Rules
+7534 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Stats Passive Scan Rule
+7541 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Authentication Request Identified
+7550 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Session Management Response Identified
+7557 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Verification Request Identified
+7567 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Anti-clickjacking Header
+7574 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Application Error Disclosure
+7582 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Big Redirect Detected (Potential Sensitive Information Leak)
+7589 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Re-examine Cache-control Directives
+7598 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Charset Mismatch
+7605 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Content Security Policy (CSP) Header Not Set
+7613 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: CSP
+7621 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Content-Type Header Missing
+7630 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Cookie No HttpOnly Flag
+7638 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Loosely Scoped Cookie
+7646 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Cookie without SameSite Attribute
+7652 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Cookie Without Secure Flag
+7660 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Cross-Domain Misconfiguration
+7667 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Cross-Domain JavaScript Source File Inclusion
+7674 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Absence of Anti-CSRF Tokens
+7682 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Directory Browsing
+7692 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Hash Disclosure
+7699 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Heartbleed OpenSSL Vulnerability (Indicative)
+7705 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Private IP Disclosure
+7712 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Session ID in URL Rewrite
+7719 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Debug Error Messages
+7726 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Sensitive Information in URL
+7733 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Sensitive Information in HTTP Referrer Header
+7740 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Information Disclosure - Suspicious Comments
+7750 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Weak Authentication Method
+7757 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: HTTP to HTTPS Insecure Transition in Form Post
+7764 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: HTTPS to HTTP Insecure Transition in Form Post
+7771 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Insecure JSF ViewState
+7777 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Reverse Tabnabbing
+7784 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Secure Pages Include Mixed Content
+7791 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Modern Web Application
+7799 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: PII Disclosure
+7806 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Retrieved from Cache
+7814 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: HTTP Server Response Header
+7820 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Strict-Transport-Security Header
+7826 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Timestamp Disclosure
+7834 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: User Controllable Charset
+7840 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Cookie Poisoning
+7847 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: User Controllable HTML Element Attribute (Potential XSS)
+7854 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: User Controllable JavaScript Event (XSS)
+7861 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Open Redirect
+7869 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Username Hash Found
+7876 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Viewstate
+7883 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: X-AspNet-Version Response Header
+7889 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: X-Backend-Server Header Information Leak
+7896 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: X-ChromeLogger-Data (XCOLD) Header Information Leak
+7902 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: X-Content-Type-Options Header Missing
+7909 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: X-Debug-Token Information Leak
+7917 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Server Leaks Information via "X-Powered-By" HTTP Response Header Field(s)
+7924 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: Vulnerable JS Library (Powered by Retire.js)
+7931 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.pscan.ExtensionPassiveScan - loaded passive scan rule: WSDL File Detection
+7970 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Alerts Extension - Allows you to view and manage alerts
+8217 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Active Scan Extension - Active scanner, heavily based on the original Paros active scanner, but with additional tests added
+8333 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Standard Menus Extension - A set of common popup menus for miscellaneous tasks
+8346 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionBruteForce - Forced browsing of files and directories using code from the OWASP DirBuster tool
+8404 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Compare Extension - Compares 2 sessions and generates an HTML file showing the differences
+8415 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionInvoke - Invoke external applications passing context related information such as URLs and parameters
+8456 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Anti-CSRF Extension - Handles anti cross site request forgery (CSRF) tokens
+8473 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Authentication Extension - Authentication Extension
+8494 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.authentication.ExtensionAuthentication - Loaded authentication method types: [Form-based Authentication, HTTP/NTLM Authentication, Manual Authentication, Script-based Authentication, JSON-based Authentication]
+8499 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Log4j Extension - Logs errors to the Output tab in development mode only
+8504 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Users Extension - Users Extension
+8509 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Parameters Extension - Summarise and analyse FORM and URL parameters as well as cookies
+8525 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Script Extension - Script integration
+8547 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionScripts - Scripting console, supports all JSR 223 scripting languages
+8861 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Forced User Extension - Forced User Extension
+8871 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing HTTP Sessions Extension - Extension handling HTTP sessions
+8911 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionZest - Zest is a specialized scripting language, originally, from Mozilla specifically designed to be used in security tools
+9220 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionDiff - ExtensionDiff
+9225 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing HTTP Panel Post Table View Extension - HTTP Panel Post Table View Extension
+9234 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Encoder Addon - Adds support for scriptable encoders to ZAP.
+9329 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Session Management Extension - Session Management Extension
+9336 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.sessions.ExtensionSessionManagement - Loaded session management method types: [Cookie-based Session Management, HTTP Authentication Session Management, Script-based Session Management]
+9339 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing HTTP Panel Form Table View Extension - HTTP Panel Form Table View Extension
+9356 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing WebSockets Support - Capture messages from WebSockets with the ability to set breakpoints.
+9464 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing SOAP/WSDL Support - Allows you to import a WSDL file containing operations which ZAP will access, adding them to the Sites tree.
+9470 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Core UI Extension - Core UI related functionality.
+9474 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Authorization Extension - Authorization Extension
+9477 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Requester - Allows to manually edit and send messages.
+9770 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing AJAX Spider - AJAX Spider, uses Crawljax
+9874 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing WebDriver Provider - Provides WebDrivers to control several browsers using Selenium and includes HtmlUnit browser.
+9905 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Refresh Sites Tree Extension - Adds menu item to refresh the Sites tree
+9911 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Help Extension - OWASP ZAP User Guide
+10067 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Call Home - Handles all of the calls to ZAP services
+10074 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Network Extension - Provides core networking capabilities.
+11098 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.network.ConnectionOptions - Unsafe SSL/TLS renegotiation disabled.
+11099 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Extension Configuration Extension - Allows you to configure which extensions are loaded when ZAP starts
+11177 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Combined HTTP Panels Extension - Combined HTTP Panels Extension
+11223 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing HTTP Panel Hex View Extension - HTTP Panel Hex View Extension
+11264 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing HTTP Panel Image View Extension - HTTP Panel Image View Extension
+11274 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing HTTP Panel Query Table View Extension - HTTP Panel Query Table View Extension
+11318 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing HTTP Panel Syntax Highlighter View Extension - HTTP Panel Syntax Highlighter View Extension
+11500 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Keyboard Configuration Extension - Adds support for configurable keyboard shortcuts for all of the ZAP menus.
+11519 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Scanner Rule Configuration Extension - Active and passive rule configuration
+11538 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Statistics Extension - Statistics
+11549 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.stats.ExtensionStats - Start recording in memory stats
+11551 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Custom Pages Extension - Custom Pages Definition
+11567 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Spider Extension - Spider used for automatically finding URIs on a site.
+11686 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Spider Automation - Spider Automation Integration
+11693 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Spider Form Handler - Spider Form Handler Integration
+11700 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Scripts Automation Framework Integration - Scripts Automation
+11711 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Authentication Helper - Authentication Helper
+11724 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing AJAX Spider Browser Based Authentication Support - Enables browser based authentication when performing an authenticated AJAX Spider scan.
+11731 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Retest - Facilitates the verification of presence/absence of certain alerts.
+11739 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionOnlineMenu - The Online menu links
+11750 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Report Generator - Templated and themed report generation functionality
+11761 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Report Generation Automation Integration - Report Generation Automation Integration
+11768 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionGraphQl - Allows you to inspect and attack GraphQL endpoints.
+11793 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing GraphQL Automation - GraphQL Automation Framework Integration
+11800 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing GraphQL Form Handler - GraphQL Form Handler Integration
+11806 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing GraphQL Spider - GraphQL Spider Integration
+11813 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing GraalVM JavaScript Engine Extension - Provides the GraalVM JavaScript engine for ZAP scripting.
+12154 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing WebSocket Fuzzer - Allows to fuzz WebSocket messages.
+12159 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing WebSocket Message Editor - Provides the WebSocket Message Editor dialogues.
+12261 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Advance Fuzzer - Provides the foundation for concrete message types (for example, HTTP, WebSockets) expose fuzzer implementations.
+12270 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing HTTP Fuzzer - Allows to fuzz HTTP messages.
+12329 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Match and Replace - Easy way to replace strings in requests and responses
+12349 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionHUD - Heads Up Display
+12615 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionHUDlaunch - ExtensionHUDlaunch
+12618 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionTipsAndTricks - Tips and Tricks
+12624 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Import/Export - Import and Export functionality supporting multiple formats.
+12648 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Import/Export Automation - Import/Export Automation Framework Integration
+12651 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionAlertFilters - Context alert rules filter
+12668 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Alert Filters Automation - Alert Filters Automation Framework Integration
+12674 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Passive Scan Rules - Release status passive scan rules
+12679 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionDomXSS - DOM XSS Active Scan Rule
+12746 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Common Library - A library of shared functionality
+12759 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionFormHandler - This extension allows a user to change the default values used for generated content (e.g. spiders, importers).
+12785 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionGettingStarted - The ZAP Getting Started Guide
+12790 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing SOAP Automation - SOAP Automation Framework Integration
+12795 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing SOAP Form Handler - SOAP Form Handler Integration
+12799 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing SOAP Spider - SOAP Spider Integration
+12803 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Ajax Spider Automation - Ajax Spider Automation Framework Integration
+12812 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Active Scan Rules - Release status active scan rules
+12815 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Automation Framework - Provides functionality to simplify using ZAP in an automated manner
+12865 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing OpenAPI Import - Allows you to spider and import OpenAPI (Swagger) definitions 
+12873 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing OpenAPI Automation - OpenAPI Automation Framework Integration
+12877 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing OpenAPI Form Handler - OpenAPI Form Handler Integration
+12882 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing OpenAPI Spider - OpenAPI Spider Integration
+12889 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Quick Start panel  - Adds the Quick Start panel for scanning and exploring applications
+13013 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Quick Start Ajax Spider integration - Add the option to use the Ajax Spider in the Quick Start scan
+13026 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Quick Start HUD Integration - HUD integration for the quick start panel
+13030 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Quick Start Browser Launcher - Launch browsers preset proxying through ZAP
+13092 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Quick Start Spider Integration - Adds the option to use the traditional Spider in the Quick Start scan.
+13096 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Out-of-band Application Security Testing - Adds Out-of-band Application Security Testing functionality.
+13155 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing OAST Scripts - Adds OAST scripts.
+13187 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.keyboard.ExtensionKeyboard - Initializing keyboard shortcuts
+23768 [ZAP-BootstrapGUI] ERROR DataNucleus.Datastore.Schema - Failed initialising database.
+org.datanucleus.exceptions.NucleusDataStoreException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:57:56 heartbeat - read: -1195 ms.
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:513) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:285) [datanucleus-rdbms-6.0.4.jar:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [?:?]
+	at org.datanucleus.util.ClassUtils.newInstance(ClassUtils.java:81) [datanucleus-core-6.0.4.jar:?]
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:592) [datanucleus-core-6.0.4.jar:?]
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:296) [datanucleus-core-6.0.4.jar:?]
+	at org.datanucleus.store.StoreManagerHelper.createStoreManagerForProperties(StoreManagerHelper.java:77) [datanucleus-core-6.0.4.jar:?]
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:424) [datanucleus-core-6.0.4.jar:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:865) [datanucleus-api-jdo-6.0.1.jar:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.createPersistenceManagerFactory(JDOPersistenceManagerFactory.java:352) [datanucleus-api-jdo-6.0.1.jar:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.getPersistenceManagerFactory(JDOPersistenceManagerFactory.java:221) [datanucleus-api-jdo-6.0.1.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at javax.jdo.JDOHelper$16.run(JDOHelper.java:1975) [javax.jdo-3.2.1.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at javax.jdo.JDOHelper.invoke(JDOHelper.java:1970) [javax.jdo-3.2.1.jar:?]
+	at javax.jdo.JDOHelper.invokeGetPersistenceManagerFactoryOnImplementation(JDOHelper.java:1177) [javax.jdo-3.2.1.jar:?]
+	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:814) [javax.jdo-3.2.1.jar:?]
+	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:722) [javax.jdo-3.2.1.jar:?]
+	at org.zaproxy.addon.database.Database.<init>(Database.java:68) [database-alpha-0.2.0.zap:?]
+	at org.zaproxy.addon.database.PermanentDatabase.<init>(PermanentDatabase.java:36) [database-alpha-0.2.0.zap:?]
+	at org.zaproxy.addon.oast.ExtensionOast.getPermanentDatabase(ExtensionOast.java:230) [oast-beta-0.16.0.zap:?]
+	at org.zaproxy.addon.oast.ExtensionOast.postInit(ExtensionOast.java:157) [oast-beta-0.16.0.zap:?]
+	at org.parosproxy.paros.extension.ExtensionLoader.hookAllExtension(ExtensionLoader.java:956) [zap-2.13.0.jar:2.13.0]
+	at org.parosproxy.paros.extension.ExtensionLoader.startLifeCycle(ExtensionLoader.java:800) [zap-2.13.0.jar:2.13.0]
+	at org.parosproxy.paros.control.AbstractControl.loadExtension(AbstractControl.java:58) [zap-2.13.0.jar:2.13.0]
+	at org.parosproxy.paros.control.Control.init(Control.java:156) [zap-2.13.0.jar:2.13.0]
+	at org.parosproxy.paros.control.Control.initSingletonWithView(Control.java:384) [zap-2.13.0.jar:2.13.0]
+	at org.zaproxy.zap.GuiBootstrap.initControlAndPostViewInit(GuiBootstrap.java:228) [zap-2.13.0.jar:2.13.0]
+	at org.zaproxy.zap.GuiBootstrap$2.run(GuiBootstrap.java:174) [zap-2.13.0.jar:2.13.0]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:57:56 heartbeat - read: -1195 ms.
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496) ~[datanucleus-rdbms-6.0.4.jar:?]
+	... 35 more
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:57:56 heartbeat - read: -1195 ms.
+	at org.hsqldb.error.Error.error(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.Logger.open(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.Database.reopen(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.Database.open(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496) ~[datanucleus-rdbms-6.0.4.jar:?]
+	... 35 more
+Caused by: org.hsqldb.persist.LockFile$LockHeldExternallyException: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:57:56 heartbeat - read: -1195 ms.
+	at org.hsqldb.persist.LockFile.checkHeartbeat(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.LockFile.pollHeartbeat(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.LockFile.tryLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.Logger.open(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.Database.reopen(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.Database.open(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496) ~[datanucleus-rdbms-6.0.4.jar:?]
+	... 35 more
+23782 [ZAP-BootstrapGUI] ERROR DataNucleus.Datastore - Exception thrown creating StoreManager : lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:57:56 heartbeat - read: -1195 ms.
+23800 [ZAP-BootstrapGUI] ERROR org.parosproxy.paros.extension.ExtensionLoader - Failed to initialise extension org.zaproxy.addon.oast.ExtensionOast (from add-on [id=oast, version=0.16.0]), cause: LockFile.LockHeldExternallyException: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:57:56 heartbeat - read: -1195 ms.
+javax.jdo.JDOFatalInternalException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:57:56 heartbeat - read: -1195 ms.
+	at org.datanucleus.api.jdo.JDOAdapter.getJDOExceptionForNucleusException(JDOAdapter.java:733) ~[?:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:878) ~[?:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.createPersistenceManagerFactory(JDOPersistenceManagerFactory.java:352) ~[?:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.getPersistenceManagerFactory(JDOPersistenceManagerFactory.java:221) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at javax.jdo.JDOHelper$16.run(JDOHelper.java:1975) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at javax.jdo.JDOHelper.invoke(JDOHelper.java:1970) ~[?:?]
+	at javax.jdo.JDOHelper.invokeGetPersistenceManagerFactoryOnImplementation(JDOHelper.java:1177) ~[?:?]
+	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:814) ~[?:?]
+	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:722) ~[?:?]
+	at org.zaproxy.addon.database.Database.<init>(Database.java:68) ~[?:?]
+	at org.zaproxy.addon.database.PermanentDatabase.<init>(PermanentDatabase.java:36) ~[?:?]
+	at org.zaproxy.addon.oast.ExtensionOast.getPermanentDatabase(ExtensionOast.java:230) ~[?:?]
+	at org.zaproxy.addon.oast.ExtensionOast.postInit(ExtensionOast.java:157) ~[?:?]
+	at org.parosproxy.paros.extension.ExtensionLoader.hookAllExtension(ExtensionLoader.java:956) [zap-2.13.0.jar:2.13.0]
+	at org.parosproxy.paros.extension.ExtensionLoader.startLifeCycle(ExtensionLoader.java:800) [zap-2.13.0.jar:2.13.0]
+	at org.parosproxy.paros.control.AbstractControl.loadExtension(AbstractControl.java:58) [zap-2.13.0.jar:2.13.0]
+	at org.parosproxy.paros.control.Control.init(Control.java:156) [zap-2.13.0.jar:2.13.0]
+	at org.parosproxy.paros.control.Control.initSingletonWithView(Control.java:384) [zap-2.13.0.jar:2.13.0]
+	at org.zaproxy.zap.GuiBootstrap.initControlAndPostViewInit(GuiBootstrap.java:228) [zap-2.13.0.jar:2.13.0]
+	at org.zaproxy.zap.GuiBootstrap$2.run(GuiBootstrap.java:174) [zap-2.13.0.jar:2.13.0]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: org.datanucleus.exceptions.NucleusDataStoreException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:57:56 heartbeat - read: -1195 ms.
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:513) ~[?:?]
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:285) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at org.datanucleus.util.ClassUtils.newInstance(ClassUtils.java:81) ~[?:?]
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:592) ~[?:?]
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:296) ~[?:?]
+	at org.datanucleus.store.StoreManagerHelper.createStoreManagerForProperties(StoreManagerHelper.java:77) ~[?:?]
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:424) ~[?:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:865) ~[?:?]
+	... 24 more
+Caused by: java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:57:56 heartbeat - read: -1195 ms.
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132) ~[?:?]
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496) ~[?:?]
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:285) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at org.datanucleus.util.ClassUtils.newInstance(ClassUtils.java:81) ~[?:?]
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:592) ~[?:?]
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:296) ~[?:?]
+	at org.datanucleus.store.StoreManagerHelper.createStoreManagerForProperties(StoreManagerHelper.java:77) ~[?:?]
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:424) ~[?:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:865) ~[?:?]
+	... 24 more
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:57:56 heartbeat - read: -1195 ms.
+	at org.hsqldb.error.Error.error(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.Logger.open(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.Database.reopen(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.Database.open(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132) ~[?:?]
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496) ~[?:?]
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:285) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at org.datanucleus.util.ClassUtils.newInstance(ClassUtils.java:81) ~[?:?]
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:592) ~[?:?]
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:296) ~[?:?]
+	at org.datanucleus.store.StoreManagerHelper.createStoreManagerForProperties(StoreManagerHelper.java:77) ~[?:?]
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:424) ~[?:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:865) ~[?:?]
+	... 24 more
+Caused by: org.hsqldb.persist.LockFile$LockHeldExternallyException: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:57:56 heartbeat - read: -1195 ms.
+	at org.hsqldb.persist.LockFile.checkHeartbeat(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.LockFile.pollHeartbeat(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.LockFile.tryLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.Logger.open(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.Database.reopen(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.Database.open(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132) ~[?:?]
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496) ~[?:?]
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:285) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at org.datanucleus.util.ClassUtils.newInstance(ClassUtils.java:81) ~[?:?]
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:592) ~[?:?]
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:296) ~[?:?]
+	at org.datanucleus.store.StoreManagerHelper.createStoreManagerForProperties(StoreManagerHelper.java:77) ~[?:?]
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:424) ~[?:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:865) ~[?:?]
+	... 24 more
+24619 [AWT-EventQueue-0] INFO  org.parosproxy.paros.control.Control - New Session
+24632 [AWT-EventQueue-0] INFO  org.parosproxy.paros.control.Control - Create and Open Untitled Db
+35494 [Thread-7] ERROR DataNucleus.Datastore.Schema - Failed initialising database.
+org.datanucleus.exceptions.NucleusDataStoreException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:58:08 heartbeat - read: -2934 ms.
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:513) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:285) [datanucleus-rdbms-6.0.4.jar:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [?:?]
+	at org.datanucleus.util.ClassUtils.newInstance(ClassUtils.java:81) [datanucleus-core-6.0.4.jar:?]
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:592) [datanucleus-core-6.0.4.jar:?]
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:296) [datanucleus-core-6.0.4.jar:?]
+	at org.datanucleus.store.StoreManagerHelper.createStoreManagerForProperties(StoreManagerHelper.java:77) [datanucleus-core-6.0.4.jar:?]
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:424) [datanucleus-core-6.0.4.jar:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:865) [datanucleus-api-jdo-6.0.1.jar:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.createPersistenceManagerFactory(JDOPersistenceManagerFactory.java:352) [datanucleus-api-jdo-6.0.1.jar:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.getPersistenceManagerFactory(JDOPersistenceManagerFactory.java:221) [datanucleus-api-jdo-6.0.1.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at javax.jdo.JDOHelper$16.run(JDOHelper.java:1975) [javax.jdo-3.2.1.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at javax.jdo.JDOHelper.invoke(JDOHelper.java:1970) [javax.jdo-3.2.1.jar:?]
+	at javax.jdo.JDOHelper.invokeGetPersistenceManagerFactoryOnImplementation(JDOHelper.java:1177) [javax.jdo-3.2.1.jar:?]
+	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:814) [javax.jdo-3.2.1.jar:?]
+	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:722) [javax.jdo-3.2.1.jar:?]
+	at org.zaproxy.addon.database.Database.<init>(Database.java:68) [database-alpha-0.2.0.zap:?]
+	at org.zaproxy.addon.database.PermanentDatabase.<init>(PermanentDatabase.java:36) [database-alpha-0.2.0.zap:?]
+	at org.zaproxy.addon.oast.ExtensionOast.getPermanentDatabase(ExtensionOast.java:230) [oast-beta-0.16.0.zap:?]
+	at org.zaproxy.addon.oast.ExtensionOast$OastSessionChangedListener.addRegisteredServersFromPermanentDatabase(ExtensionOast.java:426) [oast-beta-0.16.0.zap:?]
+	at org.zaproxy.addon.oast.ExtensionOast$OastSessionChangedListener.sessionChanged(ExtensionOast.java:402) [oast-beta-0.16.0.zap:?]
+	at org.parosproxy.paros.extension.ExtensionLoader.sessionChangedAllPlugin(ExtensionLoader.java:565) [zap-2.13.0.jar:2.13.0]
+	at org.parosproxy.paros.control.Control.notifyExtensionsSessionChanged(Control.java:616) [zap-2.13.0.jar:2.13.0]
+	at org.parosproxy.paros.control.Control.sessionSaved(Control.java:622) [zap-2.13.0.jar:2.13.0]
+	at org.parosproxy.paros.model.Session$5.run(Session.java:604) [zap-2.13.0.jar:2.13.0]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:58:08 heartbeat - read: -2934 ms.
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496) ~[datanucleus-rdbms-6.0.4.jar:?]
+	... 33 more
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:58:08 heartbeat - read: -2934 ms.
+	at org.hsqldb.error.Error.error(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.Logger.open(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.Database.reopen(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.Database.open(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496) ~[datanucleus-rdbms-6.0.4.jar:?]
+	... 33 more
+Caused by: org.hsqldb.persist.LockFile$LockHeldExternallyException: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:58:08 heartbeat - read: -2934 ms.
+	at org.hsqldb.persist.LockFile.checkHeartbeat(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.LockFile.pollHeartbeat(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.LockFile.tryLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.Logger.open(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.Database.reopen(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.Database.open(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132) ~[datanucleus-rdbms-6.0.4.jar:?]
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496) ~[datanucleus-rdbms-6.0.4.jar:?]
+	... 33 more
+35499 [Thread-7] ERROR DataNucleus.Datastore - Exception thrown creating StoreManager : lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:58:08 heartbeat - read: -2934 ms.
+35500 [Thread-7] ERROR org.parosproxy.paros.extension.ExtensionLoader - Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:58:08 heartbeat - read: -2934 ms.
+javax.jdo.JDOFatalInternalException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:58:08 heartbeat - read: -2934 ms.
+	at org.datanucleus.api.jdo.JDOAdapter.getJDOExceptionForNucleusException(JDOAdapter.java:733) ~[?:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:878) ~[?:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.createPersistenceManagerFactory(JDOPersistenceManagerFactory.java:352) ~[?:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.getPersistenceManagerFactory(JDOPersistenceManagerFactory.java:221) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at javax.jdo.JDOHelper$16.run(JDOHelper.java:1975) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at javax.jdo.JDOHelper.invoke(JDOHelper.java:1970) ~[?:?]
+	at javax.jdo.JDOHelper.invokeGetPersistenceManagerFactoryOnImplementation(JDOHelper.java:1177) ~[?:?]
+	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:814) ~[?:?]
+	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:722) ~[?:?]
+	at org.zaproxy.addon.database.Database.<init>(Database.java:68) ~[?:?]
+	at org.zaproxy.addon.database.PermanentDatabase.<init>(PermanentDatabase.java:36) ~[?:?]
+	at org.zaproxy.addon.oast.ExtensionOast.getPermanentDatabase(ExtensionOast.java:230) ~[?:?]
+	at org.zaproxy.addon.oast.ExtensionOast$OastSessionChangedListener.addRegisteredServersFromPermanentDatabase(ExtensionOast.java:426) ~[?:?]
+	at org.zaproxy.addon.oast.ExtensionOast$OastSessionChangedListener.sessionChanged(ExtensionOast.java:402) ~[?:?]
+	at org.parosproxy.paros.extension.ExtensionLoader.sessionChangedAllPlugin(ExtensionLoader.java:565) [zap-2.13.0.jar:2.13.0]
+	at org.parosproxy.paros.control.Control.notifyExtensionsSessionChanged(Control.java:616) [zap-2.13.0.jar:2.13.0]
+	at org.parosproxy.paros.control.Control.sessionSaved(Control.java:622) [zap-2.13.0.jar:2.13.0]
+	at org.parosproxy.paros.model.Session$5.run(Session.java:604) [zap-2.13.0.jar:2.13.0]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: org.datanucleus.exceptions.NucleusDataStoreException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:58:08 heartbeat - read: -2934 ms.
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:513) ~[?:?]
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:285) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at org.datanucleus.util.ClassUtils.newInstance(ClassUtils.java:81) ~[?:?]
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:592) ~[?:?]
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:296) ~[?:?]
+	at org.datanucleus.store.StoreManagerHelper.createStoreManagerForProperties(StoreManagerHelper.java:77) ~[?:?]
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:424) ~[?:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:865) ~[?:?]
+	... 22 more
+Caused by: java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:58:08 heartbeat - read: -2934 ms.
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132) ~[?:?]
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496) ~[?:?]
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:285) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at org.datanucleus.util.ClassUtils.newInstance(ClassUtils.java:81) ~[?:?]
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:592) ~[?:?]
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:296) ~[?:?]
+	at org.datanucleus.store.StoreManagerHelper.createStoreManagerForProperties(StoreManagerHelper.java:77) ~[?:?]
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:424) ~[?:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:865) ~[?:?]
+	... 22 more
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:58:08 heartbeat - read: -2934 ms.
+	at org.hsqldb.error.Error.error(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.Logger.open(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.Database.reopen(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.Database.open(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132) ~[?:?]
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496) ~[?:?]
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:285) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at org.datanucleus.util.ClassUtils.newInstance(ClassUtils.java:81) ~[?:?]
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:592) ~[?:?]
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:296) ~[?:?]
+	at org.datanucleus.store.StoreManagerHelper.createStoreManagerForProperties(StoreManagerHelper.java:77) ~[?:?]
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:424) ~[?:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:865) ~[?:?]
+	... 22 more
+Caused by: org.hsqldb.persist.LockFile$LockHeldExternallyException: lockFile: org.hsqldb.persist.LockFile@9faeabdc[file =/Users/watsonmatunhire/Library/Application Support/ZAP/db/permanent.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2023-08-28 05:58:08 heartbeat - read: -2934 ms.
+	at org.hsqldb.persist.LockFile.checkHeartbeat(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.LockFile.pollHeartbeat(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.LockFile.tryLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.persist.Logger.open(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.Database.reopen(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.Database.open(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source) ~[hsqldb-2.7.2.jar:2.7.2]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at java.sql.DriverManager.getConnection(Unknown Source) ~[java.sql:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:123) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:353) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354) ~[?:?]
+	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132) ~[?:?]
+	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:496) ~[?:?]
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:285) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at org.datanucleus.util.ClassUtils.newInstance(ClassUtils.java:81) ~[?:?]
+	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:592) ~[?:?]
+	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:296) ~[?:?]
+	at org.datanucleus.store.StoreManagerHelper.createStoreManagerForProperties(StoreManagerHelper.java:77) ~[?:?]
+	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:424) ~[?:?]
+	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:865) ~[?:?]
+	... 22 more

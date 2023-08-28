@@ -1,0 +1,34 @@
+# Non-Functional Test 1: Performance Test
+
+**Objective:** To assess the system's performance by simulating multiple users accessing the API simultaneously.
+
+**Test Details:**
+- Use the Artillery framework to conduct a performance test on the API.
+- Create a load testing scenario that sends a specified number of requests to the API endpoint.
+- Monitor response times, throughput, and any performance degradation.
+- Set performance thresholds and compare actual performance against them.
+
+# Non-Functional Test 2: Security Scanning Test
+
+**Objective:** To identify security vulnerabilities by running a security scan on the API.
+
+**Test Details:**
+- Use the OWASP ZAP (Zed Attack Proxy) tool to conduct security scans on the API.
+- Automate the security scan process using a script.
+- Start ZAP, initiate security scans, and generate a security report.
+- Verify that the security report contains relevant findings and vulnerabilities.
+- Address any critical vulnerabilities and re-run the scan to ensure they are resolved.
+
+## Framework for Automating Non-Functional Tests
+
+1. **Artillery Framework for Performance Testing:**
+   - Artillery is an open-source load testing framework that allows you to simulate real-world scenarios to assess performance.
+   - It supports defining scenarios, specifying load patterns, and monitoring metrics like response times, throughput, and errors.
+   - You can automate the performance test using Artillery scripts and generate detailed performance reports.
+
+2. **OWASP ZAP for Security Scanning:**
+   - OWASP ZAP is a widely-used security testing tool for identifying vulnerabilities in web applications and APIs.
+   - It offers a variety of scanning options, including spidering, active scanning, and reporting.
+   - You can automate ZAP using its API and command-line interface to run security scans and generate detailed reports.
+
+*Note: Both Artillery and OWASP ZAP can be integrated into your CI/CD pipeline to ensure that non-functional tests are performed consistently during the development process.*

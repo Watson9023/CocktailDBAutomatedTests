@@ -1,0 +1,53 @@
+## Functional Test Cases:
+
+### Test Case 1: Search Ingredients By Name
+**URL:** `/api/json/v1/1/search.php?i=vodka`
+**Expected Behavior:** The API should return details of the ingredient "Vodka".
+**Expected Response:** Status Code 200 OK
+**Assertions:**
+1. Ingredient ID should be "1".
+2. Ingredient should be "Vodka".
+3. Type should be "Vodka".
+4. Alcohol should be "Yes".
+5. ABV should be "40".
+**Test Steps:**
+1. Make a GET request to the given URL.
+2. Verify the response JSON against the expected behavior.
+
+### Test Case 2: Search Cocktails By Name
+**URL:** `/api/json/v1/1/search.php?s=margarita`
+**Expected Behavior:** The API should return details of the cocktail "Margarita".
+**Expected Response:** Status Code 200 OK
+**Assertions:**
+1. Drink name should be "Margarita".
+2. Category should be "Ordinary Drink".
+3. Alcoholic should be "Alcoholic".
+4. Glass should be "Cocktail glass".
+5. Instructions should contain proper content.
+**Test Steps:**
+1. Make a GET request to the given URL.
+2. Verify the response JSON against the expected behavior.
+
+### Test Case 3: Search Non-Alcoholic Ingredients By Name
+**Custom Test**
+**Expected Behavior:** The API should return details of the non-alcoholic ingredient "Orange juice".
+**Expected Response:** Status Code 200 OK
+**Assertions:**
+1. Ingredient name should be "Orange juice".
+2. Type should be "Non-alcoholic".
+3. Alcohol should be null.
+4. ABV should be null.
+**Test Steps:**
+1. Make a GET request to a custom URL for non-alcoholic ingredients.
+2. Verify the response JSON against the expected behavior.
+
+### Test Case 6: Search Cocktails By Name (Case Insensitive)
+**Objective:** To verify that the API can search for cocktails by name in a case-insensitive manner.
+**URL:** `/api/json/v1/1/search.php?s=MaRgArItA`
+**Expected Behavior:** The API should return details of the cocktail "Margarita" regardless of the case used in the search query.
+**Expected Response:** Status Code 200 OK
+**Assertions:**
+1. The name of the returned cocktail should be "Margarita" (case-insensitive comparison).
+**Test Steps:**
+1. Make a GET request to the given URL with the cocktail name "MaRgArItA".
+2. Verify that the returned cocktail's name is "Margarita" (case-insensitive comparison).

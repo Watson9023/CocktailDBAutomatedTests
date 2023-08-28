@@ -1,0 +1,21 @@
+config:
+  target: 'https://www.thecocktaildb.com'
+  phases:
+    - duration: 60
+      arrivalRate: 10
+
+scenarios:
+  - name: "Search Cocktail 'margarita'"
+    flow:
+      - get:
+          url: '/api/json/v1/1/search.php?s=margarita'
+
+  - name: "Search Ingredient 'vodka'"
+    flow:
+      - get:
+          url: '/api/json/v1/1/search.php?i=vodka'
+
+  - name: "API Home Page"
+    flow:
+      - get:
+          url: '/api.php'

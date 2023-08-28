@@ -1,0 +1,24 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e28eb648_002D6ab8_002D4e6d_002D9ddc_002Dd7d10da16d61/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CocktailTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;NUnit3x::C25F11A3-84E5-489A-9D1C-EC35DC9E4082::net6.0::CocktailDBTests.CocktailTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::C25F11A3-84E5-489A-9D1C-EC35DC9E4082::net6.0::CocktailDBTests.Tests.APITests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::C25F11A3-84E5-489A-9D1C-EC35DC9E4082::net6.0::CocktailDBTests.Tests.CocktailDBApiServiceTests.SearchIngredientsByNameAsync_ValidName_ReturnsIngredients&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::C25F11A3-84E5-489A-9D1C-EC35DC9E4082::net6.0::CocktailDBTests.Tests.CocktailDBApiServiceTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::C25F11A3-84E5-489A-9D1C-EC35DC9E4082::net6.0::CocktailDBTests.Tests.Tests.CocktailDBApiServiceTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::C25F11A3-84E5-489A-9D1C-EC35DC9E4082::net6.0::CocktailDBTests.Tests.CocktailApiServiceTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::C25F11A3-84E5-489A-9D1C-EC35DC9E4082::net6.0::CocktailDBTests.Tests.CocktailApiServiceAdditionalTestCaseTest.SearchNonAlcoholicIngredientsByNameAsync_ReturnsNonAlcoholicIngredient&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::C25F11A3-84E5-489A-9D1C-EC35DC9E4082::net6.0::CocktailDBTests.Tests.CocktailApiServiceAdditionalTestCaseTest&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::C25F11A3-84E5-489A-9D1C-EC35DC9E4082::net6.0::CocktailDBTests.Tests.CocktailApiIngredientServiceTest.SearchIngredientsByNameAsync_ValidName_LogsSearch&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::C25F11A3-84E5-489A-9D1C-EC35DC9E4082::net6.0::CocktailDBTests.Tests.CocktailApiIngredientServiceTest&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::C25F11A3-84E5-489A-9D1C-EC35DC9E4082::net6.0::CocktailDBTests.Tests.PerformanceTests.PerformanceTests.RunArtilleryLoadTest&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::C25F11A3-84E5-489A-9D1C-EC35DC9E4082::net6.0::Tests.PerformanceTests.PerformanceTests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::C25F11A3-84E5-489A-9D1C-EC35DC9E4082::net6.0::CocktailDBTests.Tests.CocktailApiService2ndAdditionalTestCaseTest.SearchCocktailsByNameAsync_CaseInsensitive_ReturnsCocktails&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::C25F11A3-84E5-489A-9D1C-EC35DC9E4082::net6.0::CocktailDBTests.Tests.CocktailApiSecurityServiceTest.RunSecurityScan_ShouldPass&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+    &lt;ProjectFile&gt;C25F11A3-84E5-489A-9D1C-EC35DC9E4082/d:Tests/d:SecurityTests/f:CocktailApiSecurityServiceTest.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFolder&gt;C25F11A3-84E5-489A-9D1C-EC35DC9E4082/d:Tests/d:ApiTests&lt;/ProjectFolder&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
